@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://du2jkbdkynxi5"]
+
+[ext_resource type="Script" uid="uid://bmfe7n68w0il0" path="res://primer_juego.gd" id="1_gvuhb"]
+[ext_resource type="Texture2D" uid="uid://dnj205sphd10s" path="res://marBikini.jpg" id="2_n74ki"]
+[ext_resource type="Texture2D" uid="uid://devyctbuf50d5" path="res://Medusa_cargando_a_Bob_Esponja.webp" id="3_ipdbw"]
+[ext_resource type="Texture2D" uid="uid://hn746lqejwq2" path="res://patricio.webp" id="4_ipdbw"]
+
+[sub_resource type="FontVariation" id="FontVariation_ipdbw"]
+
+[node name="Juego" type="Node2D" unique_id=1271015156]
+script = ExtResource("1_gvuhb")
+
+[node name="suelo" type="Sprite2D" parent="." unique_id=747491213]
+position = Vector2(576, 325.3484)
+scale = Vector2(1.5288194, 1.542288)
+texture = ExtResource("2_n74ki")
+
+[node name="personaje" type="Sprite2D" parent="." unique_id=1294315493]
+position = Vector2(1021.0001, 490.00003)
+scale = Vector2(0.42187494, 0.42187488)
+texture = ExtResource("3_ipdbw")
+flip_h = true
+
+[node name="estrella" type="Sprite2D" parent="." unique_id=1608775069]
+position = Vector2(454, 549)
+scale = Vector2(0.08883797, 0.08509376)
+texture = ExtResource("4_ipdbw")
+
+[node name="Label" type="Label" parent="." unique_id=553366010]
+offset_left = 143.0
+offset_top = 33.0
+offset_right = 1041.0
+offset_bottom = 104.0
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.93333334, 0.050980393, 0.76862746, 1)
+theme_override_fonts/font = SubResource("FontVariation_ipdbw")
+theme_override_font_sizes/font_size = 50
+text = "Hola de nuevo"
+horizontal_alignment = 1
